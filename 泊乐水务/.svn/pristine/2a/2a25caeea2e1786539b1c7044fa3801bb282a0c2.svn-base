@@ -4,13 +4,13 @@
 
     <description>
 
-        西安泊乐水务系统
+        Example For APICloud.
 
     </description>
 
     <author email="developer@apicloud.com" href="http://www.apicloud.com">
 
-        泊乐水务
+        Developer
 
     </author>
 
@@ -42,8 +42,6 @@
 
 	<preference name="statusBarAppearance" value="true"/>
 
-	<preference name="avm" value="true"/>
-
 	<permission name="readPhoneState" />
 
 	<permission name="camera" />
@@ -59,8 +57,11 @@
 	<permission name="bootCompleted" />
 
 	<permission name="hardware" />
-	
 
+	<feature name="bMap">
+        <param name="android_api_key" value="wdEEypZX8ZIlMUDHBwDDCvKMXQHmHugx" />
+        <param name="ios_api_key" value="lRiMQpRcvAQzyeZsxXPXCfOxMSGoFYxD" />
+    </feature>
 
 </widget>
 

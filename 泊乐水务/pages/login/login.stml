@@ -1,0 +1,95 @@
+<template name='tpl'>
+    <view class="page">
+        <view class="logo">
+            <image class="image" src="../../image/logo.png"></image>
+        </view>
+
+        <view class="login">
+
+            <view class="username">
+                <view class="icon"></view>
+                <input placeholder="手机号" class="input" keyboard-type="number" />
+            </view>
+
+            <view class="password">
+                <view class="icon"></view>
+                <input type="password" class="input" placeholder="密码" />
+            </view>
+
+            <view class="submit">登录</view>
+
+        </view>
+    </view>
+</template>
+<script>
+export default {
+    name: "tpl",
+    apiready() {
+        //like created
+    },
+    data() {
+        return {};
+    },
+    methods: {}
+};
+</script>
+<style>
+.page {
+    height: 100%;
+    background: url(../../image/bg_login.png) bottom center no-repeat;
+    background-size: contain;
+    color: #6b6b6b;
+}
+.image {
+    width: 112px;
+    margin: 30% auto 10%;
+}
+
+.username,
+.password {
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+    height: 40px;
+    margin-top: 20px;
+}
+.input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #cecece;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+	color: #6b6b6b;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+}
+.username .icon {
+    background: url(../../image/icon_username.png) center no-repeat;
+    background-size: cover;
+}
+
+.password .icon {
+    background: url(../../image/icon_password.png) center no-repeat;
+    background-size: cover;
+}
+
+.submit {
+    margin: 35px auto;
+    text-align: center;
+    width: 75%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 15px;
+    background: linear-gradient(270deg, #64e1de, #29abe3);
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+</style>
+
+

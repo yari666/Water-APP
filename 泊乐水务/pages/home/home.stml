@@ -1,0 +1,27 @@
+<template name='tpl'>
+    <view class="page">
+	<text>{{name}}</text>
+    </view>
+</template>
+<script>
+	export default {
+		name: 'tpl',
+		apiready(){//like created
+
+		},
+		data() {
+			return{
+				name:'小白巴巴拉拉拉拉'
+			}
+		},
+		methods: {
+
+		}
+	}
+</script>
+<style>
+    .page {
+        height: 100%;
+		background: #fff;
+    }
+</style>

@@ -1,0 +1,32 @@
+<template name='tpl'>
+    <view class="page">
+fafa
+    </view>
+</template>
+<script>
+	var map = api.require('bMap');
+
+	export default {
+		name: 'tpl',
+		apiready(){//like created
+			map.initMapSDK(function(ret) {
+				if (ret.status) {
+					alert('地图初始化成功，可以从百度地图服务器检索信息了！');
+				}
+			});
+		},
+		data() {
+			return{
+
+			}
+		},
+		methods: {
+
+		}
+	}
+</script>
+<style>
+    .page {
+        height: 100%;
+    }
+</style>
